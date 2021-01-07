@@ -28,5 +28,20 @@ List<Map<String, dynamic>> data = [
         "credit": true,
         "amount": 400,
         "date": "11 Sep 2020"
+      },{
+        "name": "Jola Solape",
+        "credit": true,
+        "amount": 400,
+        "date": "11 Sep 2020"
+      },{
+        "name": "Jola Solape",
+        "credit": true,
+        "amount": 400,
+        "date": "11 Sep 2020"
+      },{
+        "name": "Jola Solape",
+        "credit": true,
+        "amount": 400,
+        "date": "11 Sep 2020"
       },
     ];

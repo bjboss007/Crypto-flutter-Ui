@@ -12,7 +12,7 @@ class TransactionsArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    
+    int index;
     return Container(
       height: size.height * 0.5,
       decoration: BoxDecoration(
@@ -31,9 +31,10 @@ class TransactionsArea extends StatelessWidget {
             child: SizedBox(
               height: size.height * 0.45,
               child: ListView.builder(
+                padding: EdgeInsets.only(bottom: 20, top: 20),
                 scrollDirection: Axis.vertical,
                 itemCount: data.length,
-                itemBuilder: (BuildContext ctx, int index) {
+                itemBuilder: (BuildContext ctx, index) {
                   return Transaction(
                     name: data[index]["name"],
                     amount: data[index]["amount"],
@@ -41,6 +42,7 @@ class TransactionsArea extends StatelessWidget {
                     credit: data[index]["credit"],
                   );
                 },
+                
               ),
             ),
           )
